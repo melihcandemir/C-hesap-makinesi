@@ -1,11 +1,10 @@
 ﻿// işelem seçimi
-
 Console.Write("Yapmak istediğiniz işlemi seçiniz\nToplama için: +\nÇıkarma için: -\nBölme için: /\nÇarpma için: x\nMod alma için: mod\nÜs almak için: **\nYüzde almak için: %\nUygulamadan çıkmak için 0'a basınız\nSeciminiz=>> ");
 string secim = Console.ReadLine() ?? " ";
 
+// toplama
 if (secim == "+") 
 {
-    // toplama
     Console.WriteLine("Toplama işlemini seçtiniz");
     Console.Write("İlk sayınızı giriniz: ");
     int sa = Convert.ToInt32(Console.ReadLine());
@@ -14,9 +13,9 @@ if (secim == "+")
     int sonuc = sa + sa2;
     Console.WriteLine("Toplama sonucu: "+ sonuc);
 } 
+// çıkarma
 else if (secim == "-")
 {
-    // çıkarma
     Console.WriteLine("Çıkarma işlemini seçtiniz");
     Console.Write("İlk sayınızı giriniz: ");
     int sa = Convert.ToInt32(Console.ReadLine());
@@ -25,9 +24,9 @@ else if (secim == "-")
     int sonuc = sa - sa2;
     Console.WriteLine("Çıkarma sonucu: "+ sonuc);
 } 
+// bölme
 else if (secim == "/") 
 {
-    // bölme
     Console.WriteLine("Bölme işlemini seçtiniz");
     Console.Write("Bölünecek sayınızı giriniz: ");
     int sa = Convert.ToInt32(Console.ReadLine());
@@ -43,9 +42,9 @@ else if (secim == "/")
         Console.WriteLine("Bölüm sonucu: "+ sonuc);
     }
 } 
+// çarpma
 else if (secim == "x")
 {
-    // çarpma
     Console.WriteLine("Çarpma işlemini seçtiniz");
     Console.Write("İlk sayınızı giriniz: ");
     int sa = Convert.ToInt32(Console.ReadLine());
@@ -54,9 +53,9 @@ else if (secim == "x")
     int sonuc = sa * sa2;
     Console.WriteLine("Çarpma sonucu: "+ sonuc);
 }
+// mod alma
 else if (secim == "mod")
 {
-    // mod alma
     Console.WriteLine("Mod alma işlemini seçtiniz");
     Console.Write("Bölünecek sayınızı giriniz: ");
     int sa = Convert.ToInt32(Console.ReadLine());
@@ -65,9 +64,9 @@ else if (secim == "mod")
     int sonuc = sa % sa2;
     Console.WriteLine("Kalan (mod alma) sonucu: "+ sonuc);
 }
+// üs alma
 else if (secim == "**")
 {
-    // üs alma
     Console.WriteLine("Üs alma işlemini seçtiniz");
     Console.Write("Üssü alınacak sayınızı giriniz: ");
     int sa = Convert.ToInt32(Console.ReadLine());
@@ -76,9 +75,9 @@ else if (secim == "**")
     double sonuc = Math.Pow(sa, sa2);
     Console.WriteLine(sa +" üzeri "+sa2+"=>> "+sonuc);
 }
+// yüzdesin alma
 else if (secim == "%")
 {
-    // yüzdesin alma
     Console.WriteLine("Yüzde işlemini seçtiniz");
     Console.Write("Yüzdesi alınacak sayınızı giriniz: ");
     var sa = Convert.ToDouble(Console.ReadLine());
