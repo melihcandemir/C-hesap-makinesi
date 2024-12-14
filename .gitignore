@@ -1,0 +1,6 @@
+.vs/*
+.vscode/*
+.bin/*
+.deneme.sln
+.deneme.csproj
+.obj/*
